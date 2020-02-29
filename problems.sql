@@ -14,3 +14,4 @@ SELECT c.id, c.name, p.name, COUNT(result_cmp.member_id)  FROM communities c, pe
 )AS result_cm
 GROUP BY p.name
 ORDER BY c.id DESC
+LIMIT 100
