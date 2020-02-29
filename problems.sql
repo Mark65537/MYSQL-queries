@@ -11,7 +11,6 @@ SELECT c.id, c.name, p.name, COUNT(result_cmp.member_id)  FROM communities c, pe
     ORDER BY permission_id 
   )AS result_cmp
   WHERE result_cmp.member_id=cm.user_id 
-  GROUP
 )AS result_cm
 GROUP BY p.name
 ORDER BY c.id DESC
