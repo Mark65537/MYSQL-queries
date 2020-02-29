@@ -9,6 +9,6 @@ SELECT result.community_id, c.name, p.name, count(result.user_id)  FROM users u,
     JOIN community_member_permissions ON community_members.user_id=community_member_permissions.member_id
 )AS result
 WHERE result.user_id=u.id AND result.permission_id=p.id AND result.community_id=c.id
-GROUP BY p.name,c.name,result.community_id HAVING result.community_id>4
-ORDER BY result.community_id DESC, p.name ASC
+GROUP BY p.name,c.name,result.community_id HAVING result.community_id
+ORDER BY result.community_id DESC, p.name ASC/*нельзя отсортировать по возрастанию колличества разрешений так как от этого ничегог не поменяется и никокого толка не будет*/
 LIMIT 100
