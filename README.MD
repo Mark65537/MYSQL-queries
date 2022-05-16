@@ -3,7 +3,7 @@
 - Сообщества communities (id, name, created_at )
 - Возможные разрешения для сообществ permissions (id, name)
 - Членство в сообществах community_members (id, community_id, user_id, joined_at)
-- Разрешения для членов внутри сообщества community_member_permissions (id, member_id, permission_id)
+- Разрешения для членов внутри сообщества community_member_permissions (id, member_id, permission_id) <p>
 ● 1 файл(problem 1) запрос, по которому будут выданы строки с именем
 пользователя, названием сообщества, датой присоединения к сообществу,
 упорядоченные по убыванию даты присоединения к сообществу. Выбираемые
